@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Quantrex - Engineering Tomorrow | Hardware & Software Solutions</title>
+  <meta name="description" content="Quantrex offers cutting-edge hardware components, embedded system design (Arduino, ESP, Raspberry Pi), software engineering, AutoCAD, SolidWorks, and 3D printing.">
+  <meta name="keywords" content="Quantrex, Engineering Tomorrow, Hardware Development, Software Development, Arduino, ESP32, Raspberry Pi, Sensors, AutoCAD, SolidWorks, 3D Drawings">
+  
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Glowing Background Orbs & Tech Ambient Overlay -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <!-- Glowing Orbs -->
+    <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-blue-500/[0.07] blur-[120px] animate-float"></div>
+    <div class="absolute top-[30%] right-[-10%] w-[45vw] h-[45vw] max-w-[500px] max-h-[500px] rounded-full bg-cyan-400/[0.06] blur-[100px] animate-float" style="animation-duration: 30s; animation-delay: -5s;"></div>
+    <div class="absolute bottom-[-10%] left-[5%] w-[40vw] h-[40vw] max-w-[450px] max-h-[450px] rounded-full bg-indigo-500/[0.05] blur-[110px] animate-float" style="animation-duration: 28s; animation-delay: -10s;"></div>
+    
+    <!-- Modern Tech Grid Overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-[0.3]"></div>
+  </div>
+
+  <!-- Fixed Animated Circuit Background Pattern (Enhanced opacity to 0.05) -->
+  <div class="fixed inset-0 pointer-events-none opacity-[0.05] z-0 overflow-hidden">
+    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      <pattern id="circuit-pattern" width="180" height="180" patternUnits="userSpaceOnUse">
+        <path d="M 20 20 L 80 20 L 100 40 L 150 40 L 170 60 L 170 120 L 150 140 L 80 140 L 60 120 L 60 60 Z" fill="none" stroke="#0B5ED7" stroke-width="1.5" />
+        <path d="M 100 40 L 100 100 L 120 120 L 120 180" fill="none" stroke="#0A3D91" stroke-width="1" />
+        <path d="M 20 150 L 50 150 L 70 170 L 110 170" fill="none" stroke="#0B5ED7" stroke-width="1.5" />
+        <circle cx="20" cy="20" r="3.5" fill="#0B5ED7" />
+        <circle cx="150" cy="40" r="2.5" fill="#0A3D91" />
+        <circle cx="170" cy="120" r="2.5" fill="#0B5ED7" />
+        <circle cx="120" cy="180" r="3.5" fill="#0A3D91" />
+        <circle cx="20" cy="150" r="3.5" fill="#0B5ED7" />
+        <circle cx="110" cy="170" r="2.5" fill="#0B5ED7" />
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#circuit-pattern)" />
+    </svg>
+  </div>
+
+  <!-- Pulsing Circuit Lines Left and Right (Enhanced opacity to 0.12) -->
+  <svg class="fixed top-[15%] left-0 w-[240px] h-[500px] opacity-[0.12] pointer-events-none hidden lg:block z-0" viewBox="0 0 240 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M -20 30 L 120 30 L 180 90 L 180 250 L 120 310 L 120 420 L 160 460" stroke="url(#circuitGlow)" stroke-width="2" fill="none" class="animated-circuit-line" />
+    <circle cx="120" cy="30" r="4.5" fill="#00F2FE" />
+    <circle cx="180" cy="90" r="3.5" fill="#0B5ED7" />
+    <circle cx="120" cy="310" r="3.5" fill="#0B5ED7" />
+    <circle cx="160" cy="460" r="4.5" fill="#00F2FE" />
+    <defs>
+      <linearGradient id="circuitGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00F2FE" />
+        <stop offset="100%" stop-color="#0B5ED7" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <svg class="fixed top-[35%] right-0 w-[240px] h-[500px] opacity-[0.12] pointer-events-none hidden lg:block z-0" viewBox="0 0 240 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 260 30 L 120 30 L 60 90 L 60 250 L 120 310 L 120 420 L 80 460" stroke="url(#circuitGlow2)" stroke-width="2" fill="none" class="animated-circuit-line" style="animation-duration: 25s; animation-direction: reverse;" />
+    <circle cx="120" cy="30" r="4.5" fill="#00F2FE" />
+    <circle cx="60" cy="90" r="3.5" fill="#0A3D91" />
+    <circle cx="120" cy="310" r="3.5" fill="#0B5ED7" />
+    <circle cx="80" cy="460" r="4.5" fill="#00F2FE" />
+    <defs>
+      <linearGradient id="circuitGlow2" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#00F2FE" />
+        <stop offset="100%" stop-color="#0A3D91" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Sticky Navbar Header -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 glass-header py-4 md:py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Logo + Branding -->
+      <a href="#home" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 transition-transform duration-500 group-hover:rotate-180">
+          <!-- Logo SVG -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="navChrome" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFFFFF"/>
+                <stop offset="50%" stop-color="#CBD5E1"/>
+                <stop offset="100%" stop-color="#475569"/>
+              </linearGradient>
+              <linearGradient id="navBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00F2FE"/>
+                <stop offset="100%" stop-color="#0A3D91"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="45" r="28" stroke="url(#navChrome)" stroke-width="6" stroke-linecap="round" stroke-dasharray="130 40" />
+            <path d="M 50 17 L 50 25 M 22 45 L 30 45 M 78 45 L 70 45" stroke="url(#navBlue)" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="50" cy="25" r="2" fill="#00F2FE" />
+            <circle cx="30" cy="45" r="2" fill="#00F2FE" />
+            <circle cx="70" cy="45" r="2" fill="#00F2FE" />
+            <rect x="39" y="34" width="22" height="22" rx="4" fill="url(#navChrome)" stroke="url(#navBlue)" stroke-width="2" />
+            <path d="M 70 65 L 85 80" stroke="url(#navChrome)" stroke-width="6" stroke-linecap="round" />
+            <path d="M 71 64 L 83 76" stroke="url(#navBlue)" stroke-width="2" stroke-linecap="round" />
+            <circle cx="85" cy="80" r="3.5" fill="#00F2FE" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-bold tracking-wider text-slate-900 font-display">QUANTREX</span>
+          <span class="text-[9px] uppercase tracking-widest text-blue-600 font-semibold leading-none">Engineering Tomorrow</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200 py-1 border-b-2 border-transparent">Home</a>
+        <a href="#hardware" class="nav-link text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200 py-1 border-b-2 border-transparent">Hardware</a>
+        <a href="#software" class="nav-link text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200 py-1 border-b-2 border-transparent">Software</a>
+        <a href="#components" class="nav-link text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200 py-1 border-b-2 border-transparent">Components</a>
+        <a href="#why-us" class="nav-link text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200 py-1 border-b-2 border-transparent">Why Us</a>
+        <a href="#contact" class="nav-link text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors duration-200 py-1 border-b-2 border-transparent">Contact</a>
+      </nav>
+
+      <!-- WhatsApp Button (Desktop) -->
+      <div class="hidden md:block">
+        <a href="https://wa.me/918248915253?text=Hi%20Quantrex%20team,%20I'm%20interested%20in%20your%20engineering%20services." target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center space-x-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-medium text-sm transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.973 14.12 1.95 11.488 1.95c-5.437 0-9.865 4.37-9.869 9.802-.001 1.769.485 3.498 1.408 5.031L2.007 22l5.36-1.408z" />
+          </svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Hamburger Menu Button (Mobile) -->
+      <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-slate-700 focus:outline-none" aria-label="Toggle navigation menu">
+        <svg id="menu-icon" class="w-6 h-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 px-4 py-6 shadow-xl transition-all duration-300">
+      <nav class="flex flex-col space-y-4">
+        <a href="#home" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-blue-600 py-1.5 transition-colors border-l-4 border-transparent pl-2">Home</a>
+        <a href="#hardware" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-blue-600 py-1.5 transition-colors border-l-4 border-transparent pl-2">Hardware Services</a>
+        <a href="#software" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-blue-600 py-1.5 transition-colors border-l-4 border-transparent pl-2">Software Services</a>
+        <a href="#components" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-blue-600 py-1.5 transition-colors border-l-4 border-transparent pl-2">Components Showcase</a>
+        <a href="#why-us" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-blue-600 py-1.5 transition-colors border-l-4 border-transparent pl-2">Why Us</a>
+        <a href="#contact" class="mobile-nav-link text-base font-semibold text-slate-700 hover:text-blue-600 py-1.5 transition-colors border-l-4 border-transparent pl-2">Contact</a>
+        <div class="pt-4 border-t border-slate-100 flex flex-col space-y-3">
+          <a href="https://wa.me/918248915253?text=Hi%20Quantrex%20team,%20I'm%20interested%20in%20your%20engineering%20services." target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center justify-center space-x-2 px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-medium text-sm transition-all duration-300 shadow-md">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.973 14.12 1.95 11.488 1.95c-5.437 0-9.865 4.37-9.869 9.802-.001 1.769.485 3.498 1.408 5.031L2.007 22l5.36-1.408z" />
+            </svg>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative pt-32 pb-24 md:pt-48 md:pb-36 bg-gradient-to-b from-blue-50/70 via-slate-50 to-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1.5 bg-blue-100/60 rounded-full border border-blue-200">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-600 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+            </span>
+            <span class="text-xs uppercase font-bold tracking-widest text-blue-700">Engineering Tomorrow</span>
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            Innovative Solutions for <br class="hidden sm:inline">
+            <span class="gradient-text">a Smarter Tomorrow</span>
+          </h1>
+          
+          <p class="text-base sm:text-lg md:text-xl text-slate-600 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+            Empowering Ideas. Building Solutions. Engineering the Future. QUANTREX bridges the gap between hardware electronics and software engineering.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#contact" class="w-full sm:w-auto text-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-lg hover:shadow-blue-500/20 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+              Get a Quote
+            </a>
+            <a href="#hardware" class="w-full sm:w-auto text-center px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 rounded-xl font-semibold shadow-sm transition-all duration-300 hover:border-slate-300">
+              Our Services
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Animated Isometric Tech Graphics -->
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+            <!-- Glowing background aura -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-cyan-500/10 rounded-full blur-3xl opacity-75"></div>
+            
+            <!-- Rotating abstract circuit ring -->
+            <div class="absolute inset-0 border-[3px] border-dashed border-slate-300/40 rounded-full animate-[spin_60s_linear_infinite]"></div>
+            <div class="absolute inset-8 border-[1.5px] border-blue-500/30 rounded-full animate-[spin_40s_linear_infinite_reverse]"></div>
+            
+            <!-- Central Futuristic Chip Object (SVG) -->
+            <div class="absolute inset-16 bg-white border border-slate-200 rounded-3xl shadow-xl flex items-center justify-center p-6 glow-blue transition-all duration-500 transform hover:scale-105">
+              <svg viewBox="0 0 100 100" fill="none" class="w-full h-full text-slate-800" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="25" width="50" height="50" rx="10" fill="url(#heroChipBg)" stroke="#0B5ED7" stroke-width="2.5" />
+                <path d="M 50 10 V 25 M 50 75 V 90 M 10 50 H 25 M 75 50 H 90 M 35 15 V 25 M 65 15 V 25 M 35 75 V 85 M 65 75 V 85 M 15 35 H 25 M 15 65 H 25 M 75 35 H 85 M 75 65 H 85" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+                <rect x="37" y="37" width="26" height="26" rx="6" fill="#0A3D91" stroke="#00F2FE" stroke-width="1.5" />
+                <circle cx="50" cy="50" r="4" fill="#FFFFFF" />
+                <path d="M 25 35 H 75 M 25 65 H 75" stroke="#0B5ED7" stroke-width="1" stroke-dasharray="2 4" />
+                <defs>
+                  <linearGradient id="heroChipBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="100%" stop-color="#E2E8F0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            
+            <!-- Mini floating circuit nodes -->
+            <div class="absolute top-[10%] left-[20%] w-8 h-8 bg-white border border-slate-200 rounded-lg flex items-center justify-center shadow-md animate-bounce" style="animation-duration: 4s;">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            </div>
+            <div class="absolute bottom-[20%] left-[5%] w-10 h-10 bg-white border border-slate-200 rounded-lg flex items-center justify-center shadow-md animate-bounce" style="animation-duration: 5s; animation-delay: 1s;">
+              <span class="text-slate-500 font-bold text-xs">R3</span>
+            </div>
+            <div class="absolute top-[30%] right-[5%] w-12 h-12 bg-white border border-slate-200 rounded-lg flex items-center justify-center shadow-md animate-bounce" style="animation-duration: 6s; animation-delay: 0.5s;">
+              <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Wave Bottom Divider -->
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,87.43,26.54,171.13,49.16,243.6,67.24,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Hardware Services Section -->
+  <section id="hardware" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Production Grade</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-display">Hardware Development & Engineering</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        <p class="text-slate-600 font-light max-w-xl mx-auto">
+          We engineer fully integrated hardware systems. From prototyping with flexible controllers to custom printed circuit designs and components.
+        </p>
+      </div>
+
+      <!-- Services Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Card 1: Arduino -->
+        <div class="tech-hover-card border border-slate-100 bg-slate-50/50 rounded-2xl p-6 flex flex-col justify-between overflow-hidden">
+          <div class="space-y-4">
+            <!-- Product Photo -->
+            <div class="aspect-square w-full bg-slate-100 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-3 relative group">
+              <img src="arduino_uno.png" alt="Arduino Uno Board" class="object-contain w-full h-full max-h-40 transform transition-transform duration-500 group-hover:scale-108">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 bg-blue-50 text-[10px] uppercase font-bold tracking-wider text-blue-600 rounded">Prototyping</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 font-display">Arduino (All Types)</h3>
+            <p class="text-sm text-slate-500 font-light leading-relaxed">
+              Custom programming, system logic integration, shield designs, and firmware solutions using Arduino Uno, Mega, Nano, and specialized variants.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-700 flex items-center space-x-1 group">
+              <span>Request Solution</span>
+              <span class="transform transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: ESP -->
+        <div class="tech-hover-card border border-slate-100 bg-slate-50/50 rounded-2xl p-6 flex flex-col justify-between overflow-hidden">
+          <div class="space-y-4">
+            <!-- Product Photo -->
+            <div class="aspect-square w-full bg-slate-100 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-3 relative group">
+              <img src="esp32.png" alt="ESP32 Board" class="object-contain w-full h-full max-h-40 transform transition-transform duration-500 group-hover:scale-108">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 bg-cyan-50 text-[10px] uppercase font-bold tracking-wider text-cyan-600 rounded">IoT & Wi-Fi</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 font-display">ESP (All Types)</h3>
+            <p class="text-sm text-slate-500 font-light leading-relaxed">
+              Expert wireless communication nodes using ESP32 & ESP8266. Built-in web servers, Wi-Fi telemetry systems, and BLE networking capabilities.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-700 flex items-center space-x-1 group">
+              <span>Request Solution</span>
+              <span class="transform transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Raspberry Pi -->
+        <div class="tech-hover-card border border-slate-100 bg-slate-50/50 rounded-2xl p-6 flex flex-col justify-between overflow-hidden">
+          <div class="space-y-4">
+            <!-- Product Photo -->
+            <div class="aspect-square w-full bg-slate-100 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-3 relative group">
+              <img src="raspberry_pi.png" alt="Raspberry Pi 4" class="object-contain w-full h-full max-h-40 transform transition-transform duration-500 group-hover:scale-108">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 bg-purple-50 text-[10px] uppercase font-bold tracking-wider text-purple-600 rounded">Edge Computer</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 font-display">Raspberry Pi (All Types)</h3>
+            <p class="text-sm text-slate-500 font-light leading-relaxed">
+              Industrial single-board computer integration. Linux script automation, camera telemetry, local SQLite logging, and IoT gateway setups.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-700 flex items-center space-x-1 group">
+              <span>Request Solution</span>
+              <span class="transform transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Microcontrollers -->
+        <div class="tech-hover-card border border-slate-100 bg-slate-50/50 rounded-2xl p-6 flex flex-col justify-between overflow-hidden">
+          <div class="space-y-4">
+            <!-- Product Photo -->
+            <div class="aspect-square w-full bg-slate-100 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-3 relative group">
+              <img src="ic_chip.png" alt="IC Chip" class="object-contain w-full h-full max-h-40 transform transition-transform duration-500 group-hover:scale-108">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 bg-amber-50 text-[10px] uppercase font-bold tracking-wider text-amber-600 rounded">Bare Metal MCU</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 font-display">Microcontrollers</h3>
+            <p class="text-sm text-slate-500 font-light leading-relaxed">
+              Low-power PIC, AVR, STM32 microchip development. Direct register-level C/C++ programming for maximum efficiency and custom bare-metal boards.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-blue-600 hover:text-blue-700 flex items-center space-x-1 group">
+              <span>Request Solution</span>
+              <span class="transform transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Software & Engineering CAD Services Section -->
+  <section id="software" class="py-24 bg-slate-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- Left: Text content / Service list -->
+        <div class="lg:col-span-6 space-y-8">
+          <div class="space-y-4">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Comprehensive Code & Design</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-display">Software Engineering & CAD</h2>
+            <div class="w-16 h-1 bg-blue-600 rounded-full"></div>
+            <p class="text-slate-600 font-light leading-relaxed">
+              Our software development capabilities range from building responsive web systems and custom mobile applications to engineering precise mechanical drawings.
+            </p>
+          </div>
+
+          <!-- Services Bullet Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- App Development -->
+            <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1">
+              <div class="p-2.5 bg-blue-50 text-blue-600 rounded-lg">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-sm">App Development</h4>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Cross-platform iOS and Android utility apps connected to hardware.</p>
+              </div>
+            </div>
+
+            <!-- Website Development -->
+            <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1">
+              <div class="p-2.5 bg-indigo-50 text-indigo-600 rounded-lg">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-sm">Website Development</h4>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Premium responsive business portals built using robust tech stacks.</p>
+              </div>
+            </div>
+
+            <!-- Web Creation -->
+            <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1">
+              <div class="p-2.5 bg-cyan-50 text-cyan-600 rounded-lg">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a2 2 0 01-2 2H3m2 0h14a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-sm">Web Creation</h4>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Custom single page applications, landing pages, and interactive dashboards.</p>
+              </div>
+            </div>
+
+            <!-- AutoCAD -->
+            <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1">
+              <div class="p-2.5 bg-orange-50 text-orange-600 rounded-lg">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-sm">AutoCAD Drafting</h4>
+                <p class="text-xs text-slate-500 font-light mt-0.5">High-accuracy engineering blueprints, layouts, and schematic drafting.</p>
+              </div>
+            </div>
+
+            <!-- SolidWorks -->
+            <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1">
+              <div class="p-2.5 bg-rose-50 text-rose-600 rounded-lg">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-sm">SolidWorks Modeling</h4>
+                <p class="text-xs text-slate-500 font-light mt-0.5">3D assembly configurations, parametric parts, and mechanism testing.</p>
+              </div>
+            </div>
+
+            <!-- 3D Printing (Drawings) -->
+            <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border border-slate-100 shadow-sm transition-transform duration-200 hover:-translate-y-1">
+              <div class="p-2.5 bg-teal-50 text-teal-600 rounded-lg">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-sm">3D Printing Drawings</h4>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Slicing layouts, custom STL/STEP mechanical designs ready for prototyping.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Graphic UI Device Mockup -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative w-full max-w-md md:max-w-lg aspect-[4/3] bg-slate-900 rounded-2xl shadow-2xl p-2 border border-slate-700/50 group overflow-hidden">
+            <!-- Sleek Header Controls -->
+            <div class="flex items-center space-x-2 px-3 py-2 border-b border-slate-800 bg-slate-900/90 rounded-t-xl z-10 relative">
+              <div class="w-2.5 h-2.5 bg-rose-500 rounded-full"></div>
+              <div class="w-2.5 h-2.5 bg-amber-500 rounded-full"></div>
+              <div class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></div>
+              <span class="text-[10px] text-slate-500 ml-4 font-mono select-none">quantrex_core_engine.py</span>
+            </div>
+            <!-- Mockup Photo -->
+            <div class="w-full h-[calc(100%-2.2rem)] bg-slate-950 rounded-b-xl overflow-hidden relative flex items-center justify-center">
+              <img src="software_mock.png" alt="Engineering Software Mockup Dashboard" class="object-cover w-full h-full object-center opacity-85 group-hover:opacity-100 transition-opacity duration-300">
+              
+              <!-- Subtle absolute UI Overlay -->
+              <div class="absolute bottom-4 left-4 right-4 bg-slate-900/80 backdrop-blur-md p-3.5 rounded-xl border border-slate-700/30 flex items-center justify-between text-white shadow-lg">
+                <div class="flex flex-col">
+                  <span class="text-[10px] text-blue-400 font-bold uppercase tracking-wider">Quantrex CAD & Code</span>
+                  <span class="text-xs font-semibold mt-0.5">Active Simulation Pipeline</span>
+                </div>
+                <span class="flex h-2.5 w-2.5 relative">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sensors & Components Showcase Section (Hexagonal Cards) -->
+  <section id="components" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+        <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Sensors & Devices</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-display">Sensors Showcase</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        <p class="text-slate-600 font-light max-w-xl mx-auto">
+          Explore our signature precision sensor integrations. Each modular component is selected for high durability and responsive performance.
+        </p>
+      </div>
+
+      <!-- Hexagonal Grid Wrapper -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
+        
+        <!-- Hexagon 1: Ultrasonic -->
+        <div class="hex-card-outer flex flex-col items-center">
+          <div class="w-56 h-60 bg-gradient-to-br from-blue-600 via-slate-200 to-slate-400 p-[1.5px] hex-clip glow-blue">
+            <div class="w-full h-full bg-white hex-clip flex flex-col items-center justify-center p-4 relative group">
+              <!-- Background circuit glow -->
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div class="w-32 h-32 bg-slate-50 rounded-xl overflow-hidden p-2 flex items-center justify-center relative">
+                <img src="sensor_ultra.png" alt="Ultrasonic Sensor" class="object-contain w-full h-full transform transition-transform duration-500 group-hover:scale-110">
+              </div>
+              <span class="text-xs text-blue-600 font-bold tracking-widest uppercase mt-4">Range Sensor</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mt-4 font-display">Ultrasonic Sensor</h3>
+          <p class="text-xs text-slate-400 font-light text-center max-w-[200px] mt-1">Precise contactless distance measurement modules.</p>
+        </div>
+
+        <!-- Hexagon 2: IR Sensor -->
+        <div class="hex-card-outer flex flex-col items-center">
+          <div class="w-56 h-60 bg-gradient-to-br from-blue-600 via-slate-200 to-slate-400 p-[1.5px] hex-clip glow-blue">
+            <div class="w-full h-full bg-white hex-clip flex flex-col items-center justify-center p-4 relative group">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div class="w-32 h-32 bg-slate-50 rounded-xl overflow-hidden p-2 flex items-center justify-center relative">
+                <img src="sensor_ir.png" alt="IR Sensor" class="object-contain w-full h-full transform transition-transform duration-500 group-hover:scale-110">
+              </div>
+              <span class="text-xs text-blue-600 font-bold tracking-widest uppercase mt-4">Proximity</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mt-4 font-display">IR Sensor</h3>
+          <p class="text-xs text-slate-400 font-light text-center max-w-[200px] mt-1">Responsive infrared obstacle detection modules.</p>
+        </div>
+
+        <!-- Hexagon 3: DHT11 Sensor -->
+        <div class="hex-card-outer flex flex-col items-center">
+          <div class="w-56 h-60 bg-gradient-to-br from-blue-600 via-slate-200 to-slate-400 p-[1.5px] hex-clip glow-blue">
+            <div class="w-full h-full bg-white hex-clip flex flex-col items-center justify-center p-4 relative group">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div class="w-32 h-32 bg-slate-50 rounded-xl overflow-hidden p-2 flex items-center justify-center relative">
+                <img src="sensor_dht11.png" alt="DHT11 Temperature Sensor" class="object-contain w-full h-full transform transition-transform duration-500 group-hover:scale-110">
+              </div>
+              <span class="text-xs text-blue-600 font-bold tracking-widest uppercase mt-4">Environment</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mt-4 font-display">DHT11 Sensor</h3>
+          <p class="text-xs text-slate-400 font-light text-center max-w-[200px] mt-1">Calibrated digital temperature & humidity sensors.</p>
+        </div>
+
+        <!-- Hexagon 4: MQ-2 Gas Sensor -->
+        <div class="hex-card-outer flex flex-col items-center">
+          <div class="w-56 h-60 bg-gradient-to-br from-blue-600 via-slate-200 to-slate-400 p-[1.5px] hex-clip glow-blue">
+            <div class="w-full h-full bg-white hex-clip flex flex-col items-center justify-center p-4 relative group">
+              <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div class="w-32 h-32 bg-slate-50 rounded-xl overflow-hidden p-2 flex items-center justify-center relative">
+                <img src="sensor_mq2.png" alt="MQ-2 Gas Sensor" class="object-contain w-full h-full transform transition-transform duration-500 group-hover:scale-110">
+              </div>
+              <span class="text-xs text-blue-600 font-bold tracking-widest uppercase mt-4">Gas Leakage</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mt-4 font-display">MQ-2 Gas Sensor</h3>
+          <p class="text-xs text-slate-400 font-light text-center max-w-[200px] mt-1">High-sensitivity LPG, Smoke, and Combustible Gas monitors.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us / Values Section -->
+  <section id="why-us" class="py-24 bg-slate-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Our Commitment</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-display">Ideas Today, Innovations Tomorrow</h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        <p class="text-slate-600 font-light max-w-xl mx-auto">
+          We maintain absolute technical integrity in all hardware layouts and software builds, ensuring durable client outcomes.
+        </p>
+      </div>
+
+      <!-- Trust Badges 4 Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Badge 1: Quality Products -->
+        <div class="glass-card rounded-2xl p-8 text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+          <div class="mx-auto w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 font-display">Quality Products</h3>
+          <p class="text-sm text-slate-500 font-light leading-relaxed">
+            We integrate components sourced from certified manufacturers, verified through multi-point load tests.
+          </p>
+        </div>
+
+        <!-- Badge 2: Professional Service -->
+        <div class="glass-card rounded-2xl p-8 text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+          <div class="mx-auto w-14 h-14 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 font-display">Professional Service</h3>
+          <p class="text-sm text-slate-500 font-light leading-relaxed">
+            Direct communication pathways with our engineering team, timely delivery schedules, and clear phase reviews.
+          </p>
+        </div>
+
+        <!-- Badge 3: Innovative Solutions -->
+        <div class="glass-card rounded-2xl p-8 text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+          <div class="mx-auto w-14 h-14 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 font-display">Innovative Solutions</h3>
+          <p class="text-sm text-slate-500 font-light leading-relaxed">
+            Solving complex custom requirements using modern techniques, lightweight algorithms, and efficient MCU pin-mappings.
+          </p>
+        </div>
+
+        <!-- Badge 4: Customer Satisfaction -->
+        <div class="glass-card rounded-2xl p-8 text-center space-y-4 hover:-translate-y-1 transition-transform duration-300">
+          <div class="mx-auto w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 font-display">Customer Satisfaction</h3>
+          <p class="text-sm text-slate-500 font-light leading-relaxed">
+            Extended code documentation, device calibration tutorials, and comprehensive post-handover support.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        
+        <!-- Contact Left Information -->
+        <div class="lg:col-span-5 space-y-8">
+          <div class="space-y-4">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Let's Connect</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-display">Get In Touch</h2>
+            <div class="w-16 h-1 bg-blue-600 rounded-full"></div>
+            <p class="text-slate-600 font-light leading-relaxed">
+              Have an upcoming hardware project or need custom software developed? Reach out to our engineering team directly via email, WhatsApp, or the form.
+            </p>
+          </div>
+
+          <!-- Cards Stack -->
+          <div class="space-y-4">
+            
+            <!-- WhatsApp Info Card -->
+            <a href="https://wa.me/918248915253?text=Hi%20Quantrex,%20I'd%20like%20to%20consult%20with%20you%20regarding%20a%20project." target="_blank" rel="noopener noreferrer" 
+               class="flex items-center space-x-4 p-4 border border-slate-100 bg-slate-50/50 rounded-2xl hover:border-emerald-500/30 hover:bg-emerald-50/20 hover:shadow-md transition-all duration-300 group">
+              <div class="p-3.5 bg-emerald-500 text-white rounded-xl">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.973 14.12 1.95 11.488 1.95c-5.437 0-9.865 4.37-9.869 9.802-.001 1.769.485 3.498 1.408 5.031L2.007 22l5.36-1.408z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-[11px] font-bold text-emerald-600 uppercase tracking-widest leading-none mb-1">WhatsApp Chat</span>
+                <span class="block text-slate-800 font-bold text-base font-display">8248915253</span>
+                <span class="text-xs text-slate-400 font-light group-hover:text-emerald-600 transition-colors">Start immediate consultation &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Email Info Card -->
+            <a href="mailto:quantrex.tec@gmail.com?subject=Project%20Inquiry%20-%20Quantrex" 
+               class="flex items-center space-x-4 p-4 border border-slate-100 bg-slate-50/50 rounded-2xl hover:border-blue-500/30 hover:bg-blue-50/20 hover:shadow-md transition-all duration-300 group">
+              <div class="p-3.5 bg-blue-600 text-white rounded-xl">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block text-[11px] font-bold text-blue-600 uppercase tracking-widest leading-none mb-1">Email Inquiry</span>
+                <span class="block text-slate-800 font-bold text-base font-display">quantrex.tec@gmail.com</span>
+                <span class="text-xs text-slate-400 font-light group-hover:text-blue-600 transition-colors">Send your project requirements &rarr;</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Contact Right Form -->
+        <div class="lg:col-span-7 bg-slate-50/50 border border-slate-100 rounded-3xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6 relative z-10" novalidate>
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="3ec6f85f-5f8e-4c6f-a830-3599a0a335bb">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <!-- Name Input -->
+              <div class="space-y-2">
+                <label for="name" class="text-xs font-bold text-slate-700 uppercase tracking-wider">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" 
+                       class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl input-focus-effect text-slate-800 text-sm placeholder-slate-400 font-light transition-all">
+                <span id="name-error" class="hidden text-xs text-rose-500 font-medium">Please enter your name.</span>
+              </div>
+              
+              <!-- Email Input -->
+              <div class="space-y-2">
+                <label for="email" class="text-xs font-bold text-slate-700 uppercase tracking-wider">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" 
+                       class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl input-focus-effect text-slate-800 text-sm placeholder-slate-400 font-light transition-all">
+                <span id="email-error" class="hidden text-xs text-rose-500 font-medium">Please enter a valid email address.</span>
+              </div>
+
+            </div>
+
+            <!-- Subject Input -->
+            <div class="space-y-2">
+              <label for="subject" class="text-xs font-bold text-slate-700 uppercase tracking-wider">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Hardware Quote" 
+                     class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl input-focus-effect text-slate-800 text-sm placeholder-slate-400 font-light transition-all">
+            </div>
+
+            <!-- Message Input -->
+            <div class="space-y-2">
+              <label for="message" class="text-xs font-bold text-slate-700 uppercase tracking-wider">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." 
+                        class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl input-focus-effect text-slate-800 text-sm placeholder-slate-400 font-light transition-all resize-none"></textarea>
+              <span id="message-error" class="hidden text-xs text-rose-500 font-medium">Please write your message requirements.</span>
+            </div>
+
+            <button type="submit" 
+                    class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold shadow-lg hover:shadow-blue-500/10 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-slate-800">
+        
+        <!-- Footer Column 1: Brand Info -->
+        <div class="md:col-span-5 space-y-4">
+          <a href="#home" class="flex items-center space-x-3 group">
+            <div class="w-10 h-10">
+              <!-- Footer SVG Logo -->
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="45" r="28" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-dasharray="130 40" opacity="0.9" />
+                <path d="M 50 17 L 50 25 M 22 45 L 30 45 M 78 45 L 70 45" stroke="#00F2FE" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="50" cy="25" r="2" fill="#00F2FE" />
+                <rect x="39" y="34" width="22" height="22" rx="4" fill="#334155" stroke="#00F2FE" stroke-width="2" />
+                <path d="M 70 65 L 85 80" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.9" />
+                <path d="M 71 64 L 83 76" stroke="#00F2FE" stroke-width="2" stroke-linecap="round" />
+                <circle cx="85" cy="80" r="3.5" fill="#00F2FE" />
+              </svg>
+            </div>
+            <span class="text-xl font-bold tracking-wider text-white font-display">QUANTREX</span>
+          </a>
+          <p class="text-sm text-slate-400 font-light max-w-sm">
+            Empowering Ideas. Building Solutions. Engineering the Future. Leading providers of micro-electronic and software platforms.
+          </p>
+          <p class="text-xs text-blue-400 font-semibold tracking-wider font-display uppercase">"Engineering Tomorrow"</p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#hardware" class="hover:text-white transition-colors">Hardware Services</a></li>
+            <li><a href="#software" class="hover:text-white transition-colors">Software Engineering</a></li>
+            <li><a href="#components" class="hover:text-white transition-colors">Components Gallery</a></li>
+            <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact Details & Socials -->
+        <div class="md:col-span-4 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Contact Details</h4>
+          <p class="text-sm font-light leading-relaxed">
+            Email: <a href="mailto:quantrex.tec@gmail.com" class="text-blue-400 hover:underline">quantrex.tec@gmail.com</a><br>
+            WhatsApp: <a href="https://wa.me/918248915253" target="_blank" class="text-blue-400 hover:underline">8248915253</a>
+          </p>
+          <!-- Social Icons Placeholder -->
+          <div class="flex items-center space-x-4 pt-2">
+            <!-- LinkedIn -->
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white text-slate-400 transition-all duration-300" aria-label="LinkedIn Profile">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 hover:text-white text-slate-400 transition-all duration-300" aria-label="GitHub Profile">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <!-- Twitter / X -->
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white text-slate-400 transition-all duration-300" aria-label="X Profile">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-light">
+        <span>&copy; 2026 QUANTREX. All rights reserved.</span>
+        <div class="flex space-x-6 mt-4 sm:mt-0">
+          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-300">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Form Success Modal -->
+  <div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center px-4 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl p-8 max-w-sm w-full text-center space-y-5 shadow-2xl transform scale-90 transition-transform duration-300" id="success-modal-content">
+      <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="space-y-2">
+        <h3 class="text-xl font-bold text-slate-900 font-display">Thank You!</h3>
+        <p class="text-sm text-slate-500 font-light leading-relaxed">
+          Your inquiry has been successfully sent. A Quantrex engineer will contact you shortly via email or WhatsApp.
+        </p>
+      </div>
+      <button id="close-modal-btn" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-md cursor-pointer">
+        Dismiss
+      </button>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript Block -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      // Elements
+      const header = document.getElementById("header");
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      
+      const contactForm = document.getElementById("contact-form");
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message");
+      
+      const nameError = document.getElementById("name-error");
+      const emailError = document.getElementById("email-error");
+      const messageError = document.getElementById("message-error");
+      
+      const successModal = document.getElementById("success-modal");
+      const successModalContent = document.getElementById("success-modal-content");
+      const closeModalBtn = document.getElementById("close-modal-btn");
+
+      // 1. Shrink-on-scroll Header Effect
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 40) {
+          header.classList.add("shrink");
+        } else {
+          header.classList.remove("shrink");
+        }
+      });
+
+      // 2. Mobile Menu Toggle
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        const isOpen = !mobileMenu.classList.contains("hidden");
+        
+        if (isOpen) {
+          // Change to close icon
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />`;
+        } else {
+          // Change back to hamburger icon
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />`;
+        }
+      });
+
+      // Close mobile menu on nav link click
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />`;
+        });
+      });
+
+      // 3. Highlight Navigation Links on Scroll (Intersection Observer)
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+      const observerOptions = {
+        root: null,
+        rootMargin: "-25% 0px -55% 0px",
+        threshold: 0
+      };
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const activeId = entry.target.getAttribute("id");
+            
+            // Desktop links
+            navLinks.forEach(link => {
+              const href = link.getAttribute("href");
+              if (href === `#${activeId}`) {
+                link.classList.remove("text-slate-600", "border-transparent");
+                link.classList.add("text-blue-600", "border-blue-600");
+              } else {
+                link.classList.add("text-slate-600", "border-transparent");
+                link.classList.remove("text-blue-600", "border-blue-600");
+              }
+            });
+
+            // Mobile links
+            mobileNavLinks.forEach(link => {
+              const href = link.getAttribute("href");
+              if (href === `#${activeId}`) {
+                link.classList.remove("text-slate-700", "border-transparent");
+                link.classList.add("text-blue-600", "border-blue-600");
+              } else {
+                link.classList.add("text-slate-700", "border-transparent");
+                link.classList.remove("text-blue-600", "border-blue-600");
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => sectionObserver.observe(section));
+
+      // 4. Contact Form Validation and Submission
+      const validateEmail = (email) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      };
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let isValid = true;
+
+        // Reset errors
+        nameError.classList.add("hidden");
+        emailError.classList.add("hidden");
+        messageError.classList.add("hidden");
+        nameInput.classList.remove("border-rose-500", "bg-rose-50/10");
+        emailInput.classList.remove("border-rose-500", "bg-rose-50/10");
+        messageInput.classList.remove("border-rose-500", "bg-rose-50/10");
+
+        // Validate Name
+        if (!nameInput.value.trim()) {
+          nameError.classList.remove("hidden");
+          nameInput.classList.add("border-rose-500", "bg-rose-50/10");
+          isValid = false;
+        }
+
+        // Validate Email
+        if (!emailInput.value.trim() || !validateEmail(emailInput.value.trim())) {
+          emailError.classList.remove("hidden");
+          emailInput.classList.add("border-rose-500", "bg-rose-50/10");
+          isValid = false;
+        }
+
+        // Validate Message
+        if (!messageInput.value.trim()) {
+          messageError.classList.remove("hidden");
+          messageInput.classList.add("border-rose-500", "bg-rose-50/10");
+          isValid = false;
+        }
+
+        if (isValid) {
+          // Show loading state on submit button
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          const originalBtnText = submitBtn.textContent;
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending...";
+          submitBtn.classList.add("opacity-75", "cursor-not-allowed");
+
+          const formData = new FormData(contactForm);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: json
+          })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              // Show Success Modal
+              successModal.classList.remove("opacity-0", "pointer-events-none");
+              successModalContent.classList.remove("scale-90");
+              successModalContent.classList.add("scale-100");
+              contactForm.reset();
+            } else {
+              console.log(response);
+              alert(json.message || "Something went wrong. Please check your Access Key.");
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Form submission failed. Please check your network connection.");
+          })
+          .then(() => {
+            // Restore button state
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+            submitBtn.classList.remove("opacity-75", "cursor-not-allowed");
+          });
+        }
+      });
+
+      // Close Modal Functionality
+      closeModalBtn.addEventListener("click", () => {
+        successModal.classList.add("opacity-0", "pointer-events-none");
+        successModalContent.classList.remove("scale-100");
+        successModalContent.classList.add("scale-90");
+      });
+
+      // Dismiss modal on background click
+      successModal.addEventListener("click", (e) => {
+        if (e.target === successModal) {
+          closeModalBtn.click();
+        }
+      });
+
+    });
+  </script>
+
+</body>
+</html>
